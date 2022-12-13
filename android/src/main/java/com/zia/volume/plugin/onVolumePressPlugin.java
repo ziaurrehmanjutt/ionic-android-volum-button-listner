@@ -52,14 +52,15 @@ public class onVolumePressPlugin extends Plugin {
                 new View.OnKeyListener() {
                     @Override
                     public boolean onKey(View v, int keyCode, android.view.KeyEvent event) {
-                        boolean isKeyUp = event.getAction() == KeyEvent.ACTION_UP;
+                        // boolean isKeyUp = event.getAction() == KeyEvent.ACTION_UP;
+                        boolean isKeyDown = event.getAction() == KeyEvent.ACTION_DOWN;
                         JSObject ret = new JSObject();
-                        Log.w("Code Pressed", "code" + keyCode);
-                        if (isKeyUp) {
+                        // Log.w("Code Pressed", "code" + keyCode);
+                        if (isKeyDown) {
                             if (keyCode == KeyEvent.KEYCODE_VOLUME_UP) {
                                 ret.put("direction", "up");
                                 notifyListeners(VOLUME_BUTTON_PRESSED_EVENT, ret);
-                                return true;
+                                return false;
                             } else if (keyCode == KeyEvent.KEYCODE_VOLUME_DOWN) {
                                 ret.put("direction", "down");
                                 notifyListeners(VOLUME_BUTTON_PRESSED_EVENT, ret);

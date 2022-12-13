@@ -1,7 +1,7 @@
 {
   "name": "ionic-cap-volume-button-listener",
-  "version": "0.0.3",
-  "description": "Its will be used to listen volum button press in android ionic capastor",
+  "version": "1.0.0",
+  "description": "Listen for Volume Button pressed in IONIC Capacitor Project",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -25,7 +25,11 @@
   "keywords": [
     "capacitor",
     "plugin",
-    "native"
+    "native",
+    "volumeButton",
+    "hardwareButton",
+    "volume",
+    "ionic"
   ],
   "scripts": {
     "verify": "npm run verify:ios && npm run verify:android && npm run verify:web",
@@ -44,10 +48,10 @@
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "@capacitor/android": "^4.0.0",
-    "@capacitor/core": "^4.0.0",
+    "@capacitor/android": "^4.0.0 | ^3.0.0",
+    "@capacitor/core": "^4.0.0 | ^3.0.0",
     "@capacitor/docgen": "^0.0.18",
-    "@capacitor/ios": "^4.0.0",
+    "@capacitor/ios": "^4.0.0 | ^3.0.0",
     "@ionic/eslint-config": "^0.3.0",
     "@ionic/prettier-config": "^1.0.1",
     "@ionic/swiftlint-config": "^1.1.2",

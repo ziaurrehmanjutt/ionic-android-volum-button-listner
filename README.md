@@ -1,11 +1,11 @@
-# ionic-cap-volum-button-listner
+# ionic-cap-volume-button-listener
 
-Its will be used to listen volum button press in android ionic capastor
+Listen for Volume Button pressed in IONIC Capacitor Project
 
 ## Install
 
 ```bash
-npm install ionic-cap-volum-button-listner
+npm install ionic-cap-volume-button-listener
 npx cap sync
 ```
 
@@ -79,3 +79,7 @@ Removes all listeners for this plugin
 <code>{ direction: 'up' | 'down' }</code>
 
 </docgen-api>
+
+<code>if(direction == 'up' ) Then Event will not be captures and continue original function like volume increase</code>
+
+<code>if(direction == 'down' ) Then Event will be captures and no further action will be performed like no volume decrease</code>
