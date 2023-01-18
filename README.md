@@ -80,6 +80,10 @@ Removes all listeners for this plugin
 
 </docgen-api>
 
+For Android Only
 <code>if(direction == 'up' ) Then Event will not be captures and continue original function like volume increase</code>
 
 <code>if(direction == 'down' ) Then Event will be captures and no further action will be performed like no volume decrease</code>
+
+
+Credit: https://github.com/thiagobrez/capacitor-volume-buttons

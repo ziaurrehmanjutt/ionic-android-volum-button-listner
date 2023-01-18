@@ -1,6 +1,6 @@
 {
   "name": "ionic-cap-volume-button-listener",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "Listen for Volume Button pressed in IONIC Capacitor Project",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -11,7 +11,7 @@
     "android/build.gradle",
     "dist/",
     "ios/Plugin/",
-    "IonicCapVolumButtonListner.podspec"
+    "CapacitorVolumeButtons.podspec"
   ],
   "author": "Zia Ur Rehman",
   "license": "MIT",
@@ -72,6 +72,9 @@
     "extends": "@ionic/eslint-config/recommended"
   },
   "capacitor": {
+    "ios": {
+      "src": "ios"
+    },
     "android": {
       "src": "android"
     }

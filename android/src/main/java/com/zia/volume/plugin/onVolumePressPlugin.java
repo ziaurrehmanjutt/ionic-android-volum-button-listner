@@ -1,33 +1,3 @@
-// package com.zia.volume.plugin;
-// import com.getcapacitor.JSObject;
-// import com.getcapacitor.Plugin;
-// import com.getcapacitor.PluginCall;
-// import com.getcapacitor.PluginMethod;
-// import com.getcapacitor.annotation.CapacitorPlugin;
-
-// @CapacitorPlugin(name = "onVolumePress")  
-// public class onVolumePressPlugin extends Plugin {
-
-//     private onVolumePress implementation = new onVolumePress();
-
-//     @PluginMethod
-//     public void echo(PluginCall call) {
-//         @Override
-//         public boolean onKeyDown(int keyCode, KeyEvent event) {
-//             if (keyCode == KeyEvent.KEYCODE_VOLUME_DOWN){
-//                 JSObject ret = new JSObject();
-//                 ret.put(keyCode, event);
-//                 notifyListeners("keyDownVolume", ret);
-//                 // call.resolve(keyCode);
-//             }
-//         }
-
-//     }
-
-
-// }
-
-
 package com.zia.volume.plugin;
 
 import android.view.KeyEvent;
